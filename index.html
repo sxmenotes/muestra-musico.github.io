@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f3ec" />
+    <meta name="description" content="Julián Alba. Voz y guitarra para bodas con alma. Una propuesta de música en vivo para acompañar los momentos que se quedan para siempre." />
+    <title>Julián Alba — La música de su historia</title>
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <script>
+      // Configure restoration before the browser restores a previous scroll position.
+      history.scrollRestoration = 'manual';
+      const isReload = performance.getEntriesByType('navigation')[0]?.type === 'reload';
+      if (isReload && location.hash) {
+        history.replaceState(history.state, '', location.pathname + location.search);
+      }
+      window.addEventListener('pageshow', () => {
+        if (isReload || !location.hash || location.hash === '#inicio') {
+          window.scrollTo({ top: 0, left: 0, behavior: 'instant' });
+        }
+      });
+    </script>
+    <link rel="stylesheet" href="/style.css" />
+    <script type="module" src="/main.js"></script>
+  </head>
+  <body>
+    <header class="site-header" id="inicio">
+      <a class="wordmark" href="#inicio" aria-label="Julián Alba, inicio">julián alba<span>MÚSICA PARA CELEBRAR EL AMOR</span></a>
+      <button class="menu-toggle" aria-expanded="false" aria-controls="navigation" aria-label="Abrir menú"><span></span><span></span></button>
+      <nav id="navigation" aria-label="Navegación principal">
+        <a href="#momentos">Sus momentos</a><a href="#repertorio">La música</a><a href="#historia">Mi historia</a><a class="nav-cta" href="#contacto">Hablemos de su boda <span aria-hidden="true">↗</span></a>
+      </nav>
+    </header>
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <img class="hero-media" src="/images/hero-performer.jpg" alt="Julián Alba cantando con su guitarra en una boda al atardecer" width="1376" height="768" fetchpriority="high">
+        <div class="hero-content section-shell">
+          <div class="hero-copy">
+            <p class="eyebrow hero-eyebrow">JULIÁN ALBA · VOZ Y GUITARRA EN VIVO</p>
+            <h1 id="hero-title">El amor también <em>se escucha.</em></h1>
+            <p class="hero-description">Música en vivo para la ceremonia, el brindis y ese primer baile que quisieran repetir.</p>
+            <a class="button hero-cta" href="#contacto">Hablemos de su boda <span aria-hidden="true">↗</span></a>
+          </div>
+        </div>
+        <a class="hero-scroll" href="#momentos"><span>Descubran más</span><i aria-hidden="true"></i></a>
+      </section>
+      <section class="moments section-shell section-space" id="momentos">
+        <div class="section-heading reveal"><div><p class="eyebrow">SU DÍA, MOMENTO A MOMENTO</p><h2>Del primer latido<br>al <em>último abrazo.</em></h2></div><p>De la ceremonia al primer baile, elegimos juntos las canciones y el formato para cada parte de su celebración.</p></div>
+        <div class="moment-grid">
+          <article class="moment-card reveal"><div class="moment-image"><img src="/images/wedding.jpg" loading="lazy" alt="Recién casados abrazados después de su ceremonia" width="900" height="600"><span class="image-index">01</span></div><div class="moment-card-heading"><h3>El «sí, quiero»</h3><span aria-hidden="true">↗</span></div><p>Una entrada que eriza la piel. Sus canciones favoritas para acompañar la ceremonia más importante de su vida.</p><span class="moment-tag">CEREMONIA · EMOCIÓN A FLOR DE PIEL</span></article>
+          <article class="moment-card reveal"><div class="moment-image"><img src="/images/guitar.jpg" loading="lazy" alt="Guitarra acústica para acompañar un cóctel en vivo" width="1200" height="800"><span class="image-index">02</span></div><div class="moment-card-heading"><h3>Brindar y encontrarse</h3><span aria-hidden="true">↗</span></div><p>Versiones acústicas, conversaciones y copas que se encuentran. El ambiente perfecto, sin robarle protagonismo a nadie.</p><span class="moment-tag">CÓCTEL · EL ARTE DE ACOMPAÑAR</span></article>
+          <article class="moment-card reveal"><div class="moment-image"><img src="/images/celebration.jpg" loading="lazy" alt="Mesas de celebración con velas y arreglos florales" width="1000" height="667"><span class="image-index">03</span></div><div class="moment-card-heading"><h3>Su mundo, por un instante</h3><span aria-hidden="true">↗</span></div><p>Una versión íntima de esa canción que es tan suya. Y por unos minutos, aunque haya cien personas, solo existen ustedes.</p><span class="moment-tag">PRIMER BAILE · UN RECUERDO PARA SIEMPRE</span></article>
+        </div>
+      </section>
+      <section class="music-section" id="repertorio">
+        <div class="section-shell music-layout">
+          <div class="music-copy reveal"><p class="eyebrow">MENOS PALABRAS. MÁS MÚSICA.</p><h2>Así podría sonar<br><em>su historia.</em></h2><p>Una guitarra, una melodía y espacio para sentir.<br>Denle play. Imaginen el momento.</p><div class="record-art" aria-hidden="true"><div class="record"><div class="record-label">ja</div></div><span class="record-spark">✳</span></div></div>
+          <div class="playlist reveal"><p class="playlist-label">PEQUEÑAS MELODÍAS, GRANDES COMIENZOS <span>VOL. 01</span></p>
+            <button class="track" data-track="0" aria-label="Reproducir Donde empieza todo" aria-pressed="false"><span class="track-index">01</span><span class="track-info"><strong>Donde empieza todo</strong><small>Para caminar hacia el sí</small></span><span class="track-duration">0:24</span><span class="track-play" aria-hidden="true">▷</span></button>
+            <button class="track" data-track="1" aria-label="Reproducir Luz de domingo" aria-pressed="false"><span class="track-index">02</span><span class="track-info"><strong>Luz de domingo</strong><small>Para brindar sin mirar el reloj</small></span><span class="track-duration">0:24</span><span class="track-play" aria-hidden="true">▷</span></button>
+            <button class="track" data-track="2" aria-label="Reproducir Siempre, contigo" aria-pressed="false"><span class="track-index">03</span><span class="track-info"><strong>Siempre, contigo</strong><small>Para bailar un poquito más cerca</small></span><span class="track-duration">0:24</span><span class="track-play" aria-hidden="true">▷</span></button>
+            <div class="player-footer"><div class="sound-wave" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div><p id="player-status" aria-live="polite">Elijan una melodía para empezar.</p></div><div class="audio-progress" role="progressbar" aria-label="Progreso de reproducción" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><span></span></div>
+            <p class="demo-note">Bocetos instrumentales sintetizados para esta propuesta. No son grabaciones de un artista real.</p><p class="song-request">¿Ya tienen <em>su</em> canción? <a href="#contacto">Hagámosla parte del día ↗</a></p>
+          </div>
+        </div>
+      </section>
+      <section class="story section-shell section-space" id="historia">
+        <div class="story-title reveal"><p class="eyebrow">UN GUSTO, SOY JULIÁN</p><h2>La música pasa.<br><em>Lo que se siente, queda.</em></h2><span class="signature">Julián Alba</span></div>
+        <div class="story-copy reveal"><span class="line-ornament" aria-hidden="true">✳</span><p>Creo en las canciones que nos llevan a alguien. En esa primera nota que hace sonreír. Y en la magia de cantar, mirándolos a los ojos, justo antes de un «sí, quiero».</p><p>Soy cantante y guitarrista. Acompaño bodas íntimas, grandes celebraciones y, sobre todo, historias únicas. La suya merece una música que se sienta tan propia como sus votos.</p><a class="text-link" href="#contacto">Conversemos sobre su boda <span aria-hidden="true">↗</span></a></div>
+      </section>
+      <section class="quote-section section-shell section-space reveal"><p class="eyebrow">ASÍ SE IMAGINA UN RECUERDO BONITO</p><span class="quote-mark" aria-hidden="true">“</span><blockquote>Sonó nuestra canción y, de pronto,<br>todo lo demás <em>se quedó en silencio.</em></blockquote><div class="quote-attribution"><span class="small-rule"></span><p>Clara &amp; Nicolás <span>UNA HISTORIA IMAGINADA · OCTUBRE 2027</span></p><span class="small-rule"></span></div></section>
+      <section class="details section-shell section-space" id="detalles"><div class="reveal"><p class="eyebrow">CON CALMA, CON CONFIANZA</p><h2>Las cosas claras.<br><em>La música, cerca.</em></h2><p>Porque organizar su boda ya tiene suficientes<br>preguntas. Aquí resolvemos algunas.</p></div><div class="faq-list reveal"><details open><summary>¿Podemos elegir nuestras canciones?<span aria-hidden="true">+</span></summary><p>Por supuesto. Construimos juntos el repertorio y elegimos las canciones de los momentos especiales. Si hay una que cuenta su historia, preparo una versión acústica para ustedes.</p></details><details><summary>¿Dónde puedes acompañarnos?<span aria-hidden="true">+</span></summary><p>Mi punto de partida es Buenos Aires, pero las buenas historias no tienen fronteras. Podemos coordinar una celebración en cualquier rincón de Argentina, contemplando el traslado en la propuesta.</p></details><details><summary>¿Qué incluye la experiencia?<span aria-hidden="true">+</span></summary><p>Una charla para conocernos, selección personalizada de canciones, voz y guitarra en vivo y equipo de sonido para el espacio acordado. Afinamos los tiempos y detalles con su organizador.</p></details><details><summary>¿Con cuánta anticipación reservamos?<span aria-hidden="true">+</span></summary><p>Lo ideal es conversar entre seis y doce meses antes, especialmente para bodas en primavera. Si falta menos, también podemos revisar la fecha y encontrar una propuesta juntos.</p></details></div></section>
+      <section class="contact-section" id="contacto"><div class="section-shell contact-layout"><div class="contact-copy reveal"><p class="eyebrow">EL PRIMER PASO ES UNA CONVERSACIÓN</p><h2>Las mejores historias<br>empiezan con<br><em>un «hola».</em></h2><p>Cuéntenme qué imaginan para su gran día.<br>Yo pongo las cuerdas. Ustedes, la historia.</p><span class="contact-flower" aria-hidden="true">✳</span><p class="contact-location">BUENOS AIRES, ARGENTINA<br>DISPONIBLE DONDE ESTÉ SU HISTORIA</p></div><form class="contact-form reveal"><div class="form-title"><h3>Hablemos de su día.</h3><span aria-hidden="true">↗</span></div><div class="form-field"><label for="names">¿Cómo se llaman?</label><input id="names" name="names" placeholder="Sus nombres" autocomplete="name" required maxlength="100"></div><div class="form-row"><div class="form-field"><label for="date">La fecha soñada</label><input id="date" name="date" type="date" required></div><div class="form-field"><label for="location">¿Dónde celebran?</label><input id="location" name="location" placeholder="Ciudad o lugar" required maxlength="150"></div></div><div class="form-field"><label for="email">Su correo electrónico</label><input id="email" name="email" type="email" placeholder="hola@suhermosahistoria.com" autocomplete="email" required></div><div class="form-field"><label for="message">Un poquito de su historia <span>(opcional)</span></label><textarea id="message" name="message" placeholder="Esa canción especial, el lugar, lo que imaginan…" rows="2" maxlength="2000"></textarea></div><button class="button" type="submit">Imaginar nuestra banda sonora <span aria-hidden="true">↗</span></button><p class="form-note">Formulario de demostración. No se enviarán ni guardarán sus datos.</p><p id="form-status" class="form-status" role="status"></p></form></div></section>
+    </main>
+    <footer class="site-footer">
+      <div class="section-shell">
+        <div class="footer-main">
+          <div class="footer-about">
+            <a class="wordmark" href="#inicio" aria-label="Julián Alba, volver al inicio">julián alba</a>
+            <p>Voz y guitarra para su ceremonia, cóctel y primer baile. Música a la medida de su historia.</p>
+            <p class="footer-location"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M19 10c0 5-7 11-7 11S5 15 5 10a7 7 0 1 1 14 0Z"/><circle cx="12" cy="10" r="2.5"/></svg>Buenos Aires, Argentina.</p>
+          </div>
+          <nav class="footer-nav" aria-label="Explorar la página">
+            <h2>Explorar</h2>
+            <a href="#momentos">Sus momentos</a><a href="#repertorio">La música</a><a href="#historia">Mi historia</a><a href="#detalles">Preguntas frecuentes</a><a href="#contacto">Consultar una fecha</a>
+          </nav>
+          <div class="footer-connect">
+            <h2>Contacto y redes</h2>
+            <button class="footer-whatsapp" type="button" data-social="WhatsApp" aria-haspopup="dialog" aria-describedby="footer-demo"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.6 7.4L3 20l1.1-4.9A8.5 8.5 0 1 1 20.5 11.5Z"/><path d="m8 7 2 3-1.2 1.2a8 8 0 0 0 4 4L14 14l3 2c-1 3-4 1-6-1S6 9 8 7Z"/></svg>Hablemos por WhatsApp <span aria-hidden="true">↗</span></button>
+            <div class="footer-socials" aria-label="Redes sociales de demostración">
+              <button type="button" data-social="Instagram" aria-haspopup="dialog" aria-describedby="footer-demo">Instagram <span aria-hidden="true">↗</span></button>
+              <button type="button" data-social="YouTube" aria-haspopup="dialog" aria-describedby="footer-demo">YouTube <span aria-hidden="true">↗</span></button>
+              <button type="button" data-social="Spotify" aria-haspopup="dialog" aria-describedby="footer-demo">Spotify <span aria-hidden="true">↗</span></button>
+            </div>
+            <p id="footer-demo" class="footer-note">Redes y WhatsApp de demostración.</p>
+          </div>
+        </div>
+        <div class="footer-bottom"><p>© 2026 Julián Alba.<span>Artista y contenido ficticios.</span></p><a class="back-top" href="#inicio" aria-label="Volver al inicio">↑</a></div>
+      </div>
+    </footer>
+    <dialog class="social-dialog" aria-labelledby="social-title" aria-describedby="social-description">
+      <button class="dialog-close" type="button" aria-label="Cerrar ventana">×</button>
+      <p class="eyebrow">UNA PEQUEÑA ACLARACIÓN</p><h2 id="social-title">Sigamos en contacto.</h2>
+      <p id="social-description"></p><a class="button dialog-contact" href="#contacto">Explorar el formulario <span aria-hidden="true">↗</span></a>
+    </dialog>
+  </body>
+</html>
